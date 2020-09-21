@@ -37,9 +37,15 @@
 
   /* Hamburger */
   .navbar-default.side-navigation .navbar-toggle {
-    border-color: transparent;
+    z-index: 99;
+    width: 39px;
+    height: 39px;
     padding: 0;
     margin: 0;
+    margin-left: 15px;
+    border: none;
+    background: transparent;
+    border-color: transparent;
   }
   .navbar-default.side-navigation .navbar-toggle:hover,
   .navbar-default.side-navigation .navbar-toggle:focus {
@@ -64,6 +70,7 @@
 
   @media (max-width: 768px) {
     /* SIDE NAVIGATION */
+    .navbar-default.side-navigation .navbar-toggle{display: inline-block;}
     .side-navigation #bs-example-navbar-collapse-1 {
       position: fixed;
       top: 0;
@@ -74,6 +81,21 @@
       background-color: #974b00;
       overflow: auto;
     }
-    .side-navigation #bs-example-navbar-collapse-1{ padding-top: 20px; padding-right: 20px; }
+    .side-navigation #bs-example-navbar-collapse-1{ padding-top: 46px; padding-right: 20px; }
     /* SIDE NAVIGATION */
+
+    /* SIDE NAVIGATION CLOSE BUTTON */
+    .navbar-toggle.collapsed::before { content: ''; display: none; }
+    .navbar-toggle::before {
+      display: inline-block;
+      position: absolute;
+      transform: scale(0.3);
+      top: -40px;
+      right: 120px;
+      color: #ffffff;
+      opacity: 0.6;
+    }
+    /* SIDE NAVIGATION CLOSE BUTTON */
+
+
   }

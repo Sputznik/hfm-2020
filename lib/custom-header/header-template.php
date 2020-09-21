@@ -14,3 +14,7 @@
       <!-- </div> -->
     </nav>
 </div>
+
+<style media="screen">
+.navbar-toggle::before { content: url('<?php echo get_stylesheet_directory_uri().'/assets/images/arrow-right.png';?>'); }
+</style>

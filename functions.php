@@ -3,6 +3,7 @@
 /*ENQUEUE STYLES*/
 add_action('wp_enqueue_scripts',function(){
   wp_enqueue_style( 'hfm-css', get_stylesheet_directory_uri().'/assets/css/hfm-twenty-twenty.css', array('sp-core-style'), time() );
+  wp_enqueue_script( 'hfm-js', get_stylesheet_directory_uri().'/assets/js/hfm-twenty-twenty.js', array( 'jquery' ), time(), true );
 },99);
 
 //Include Files
