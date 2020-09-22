@@ -60,6 +60,57 @@
   .navbar-default.side-navigation .navbar-toggle .icon-bar:last-child{ margin-bottom: 0; }
   /* Hamburger */
 
+
+  /* FOOTER */
+  .hfm-footer-wrapper{
+    min-height: 360px;
+    background-color: #974b00;
+    color: #ffffff;
+    padding: 40px;
+  }
+  /* FOOTER SECTION ONE */
+  .hfm-footer-wrapper .section-one{ display: grid; grid-template-columns: 1fr 1fr; }
+  .hfm-footer-wrapper .left-column{ width: 100%; max-width: 500px; display: grid; grid-template-columns: 1fr 1fr; }
+  .hfm-footer-wrapper .hfm-logo img{ max-width: 120px; width: 100%;}
+  .hfm-footer-wrapper .contact h6{ margin-top: 0; font-weight: bold; }
+  .hfm-footer-wrapper .contact h6,
+  .hfm-footer-wrapper .contact p{
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.25;
+    color: #ffffff;
+  }
+  .hfm-footer-wrapper .contact{ width: 100%; max-width: 150px; }
+  /* FOOTER SECTION ONE */
+
+  /* FOOTER SECTION TWO */
+  .hfm-footer-wrapper .section-two{
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .hfm-footer-wrapper .copyright{
+    align-self: center;
+    font-family: "Barlow";
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #ffffff;
+  }
+  .social-icons{ margin: 0;}
+	.social-icons li{ display: inline-block; margin-right: 20px;}
+	.social-icons li:last-child{ margin-right: 0;}
+	.social-icons .fa{ font-size: 24px;}
+  .hfm-footer-wrapper .social-icons{ justify-self: end; }
+  /* FOOTER SECTION TWO */
+
+
   @media (min-width: 768px){
     .side-navigation .navbar-nav { display: inline-block; }
   }
@@ -97,5 +148,15 @@
     }
     /* SIDE NAVIGATION CLOSE BUTTON */
 
-
   }
+
+  /* FOOTER */
+   @media(max-width: 680px){
+     /* FOOTER */
+     .hfm-footer-wrapper{ padding: 30px 22px 23px 20px; }
+     .hfm-footer-wrapper .hfm-logo img { max-width: 80px;}
+     .hfm-footer-wrapper .left-column{ grid-template-columns: 1fr; grid-row-gap: 40px; }
+     .hfm-footer-wrapper .section-two{ grid-template-columns: 1fr; grid-row-gap: 23px; margin-top: 40px;}
+     .hfm-footer-wrapper .social-icons{ grid-row-start: 1; justify-self: start; }
+     /* FOOTER */
+   }

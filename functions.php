@@ -18,3 +18,11 @@ add_filter( 'sp_list_google_fonts', function( $fonts ){
   );
   return $fonts;
 });
+
+// Override parent themes footer template
+add_action('sp_pre_footer',function(){
+  include('partials/footer-template.php');
+},15);
+
+//Override parent themes footer-class
+add_filter( 'sp_prefooter_class', function(){ return 'container-fluid hfm-footer-wrapper'; });
