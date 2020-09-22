@@ -19,6 +19,14 @@ add_filter( 'sp_list_google_fonts', function( $fonts ){
   return $fonts;
 });
 
+
+/* ADD SOW FROM THE THEME */ 
+add_action('siteorigin_widgets_widget_folders', function( $folders ){
+  $folders[] = get_stylesheet_directory() . '/so-widgets/';
+  return $folders;
+});
+
+
 // Override parent themes footer template
 add_action('sp_pre_footer',function(){
   include('partials/footer-template.php');
