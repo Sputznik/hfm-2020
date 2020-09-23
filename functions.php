@@ -35,3 +35,8 @@ add_action('sp_pre_footer',function(){
 
 //Override parent themes footer-class
 add_filter( 'sp_prefooter_class', function(){ return 'container-fluid hfm-footer-wrapper'; });
+
+// RETURNS UNIQUE ID
+function getUniqueID( $data ){
+	return substr( md5( json_encode( $data ) ), 0, 8 );
+}
