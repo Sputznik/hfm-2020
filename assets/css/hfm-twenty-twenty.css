@@ -20,10 +20,6 @@
     font-weight: bold;
     background-color: transparent;
   }
-  .navbar-default.side-navigation .nav > li > a:hover,
-  .navbar-default.side-navigation .nav > li > a:focus {
-    color: #ffffff;
-  }
   /* Navbar links */
 
   /* Active link */
@@ -224,7 +220,10 @@
   }
 
   @media (min-width: 768px){
+    /* Navbar links */
     .side-navigation .navbar-nav { display: inline-block; }
+    .navbar-default.side-navigation .nav > li > a:hover{ color: #ffffff; opacity: 1; }
+    /* Navbar links */
   }
 
   @media only screen and (max-width: 768px) and (min-width: 768px){
