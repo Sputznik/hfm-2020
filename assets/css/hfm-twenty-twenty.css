@@ -174,9 +174,9 @@
     letter-spacing: 4px;
     color: #ffffff;
   }
-  .hfm-hero-navigation .hero-pane{ display: none; }
-  .hfm-hero-navigation .hero-pane.active{display: block;}
-  .hfm-hero-navigation .hero-pane .hero-image{ height: 100vh; background-position: center; background-repeat: no-repeat; background-size: cover; }
+  .hfm-hero-navigation .hero-pane{ display: none; opacity: 0.6; }
+  .hfm-hero-navigation .hero-pane.active{display: block; opacity: 1; }
+  .hfm-hero-navigation .hero-pane .hero-image{ height: 901px; background-position: center; background-repeat: no-repeat; background-size: cover; }
   .hfm-hero-navigation .hero-pane .overlay{ position: absolute; top: 0; left:0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.4); }
   .hfm-hero-navigation .hero-nav-tabs{ position: absolute; top: 165px; left: 40px; right: 120px; }
   .hfm-hero-navigation .hero-nav-tabs > li{ margin-bottom: 60px; display: grid; grid-template-columns: 1fr 1fr;  justify-items: end; }

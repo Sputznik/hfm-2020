@@ -12,11 +12,11 @@ $.fn.hfm_hero_navigation = function() {
       var heroPane = $el.attr('href');
 
       // REMOVE ACTIVE CLASS FROM TAB AND TAB PANE
-      $('.hfm-hero-navigation').find('.hero-pane.active').removeClass('active');
+      $('.hfm-hero-navigation').find('.hero-pane.active').animate({ opacity:0.6 }, 600, "swing").removeClass('active');
       $('.hfm-hero-navigation').find('.hero-tab.active').removeClass('active');
 
       // ADD ACTIVE CLASS TO TAB AND TAB PANE
-      $('.hero-pane'+heroPane).addClass('active');
+      $('.hero-pane'+heroPane).animate({ opacity: 1 }, 600, "swing").addClass('active');
       $(tabParent).addClass('active');
 		};
 
