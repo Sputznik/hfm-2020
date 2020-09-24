@@ -139,7 +139,7 @@
     grid-template-columns: 590px 1fr;
     grid-column-gap: 100px;
   }
-  #hfm-carousel-sow .carousel-inner > .item > .item-body > img{ width:100%; height:720px; object-fit: cover; }
+  #hfm-carousel-sow .carousel-inner > .item > .item-body > img{ width:100%; height:820px; object-fit: cover; }
 
   /* Indicators */
   #hfm-carousel-sow .carousel-indicators li {
@@ -218,7 +218,7 @@
     /* SOw-IMG-GRID */
 
     /* SOW CAROUSEL */
-    #hfm-carousel-sow .carousel-indicators { left: 77.7%; width: 20%; text-align: left; }
+    #hfm-carousel-sow .carousel-indicators { left: 80%; width: 20%; text-align: left; }
     #hfm-carousel-sow .carousel-indicators { bottom: 131.5px; }
     /* SOW CAROUSEL */
   }
@@ -245,6 +245,15 @@
     }
     .hfm-hero-navigation .hero-pane .hero-image{ height: 1026px; }
     /* SOW HERO NAVIGATION */
+
+    /* SOW CAROUSEL */
+    #hfm-carousel-sow .carousel{ padding-bottom: 30px;}
+    #hfm-carousel-sow .carousel-inner{ height: auto; }
+    #hfm-carousel-sow .carousel-inner .item-body{ display: block;}
+    #hfm-carousel-sow .carousel-indicators{ left: 30%; text-align: left; bottom: 0px; }
+    #hfm-carousel-sow .carousel-inner .item-body > img{display: none;}
+    #hfm-carousel-sow .carousel-inner .item-body > .item-content { width: 100%; }
+    /* SOW CAROUSEL */
   }
 
   @media (max-width: 768px) {
@@ -276,12 +285,7 @@
     }
     /* SIDE NAVIGATION CLOSE BUTTON */
 
-    /* SOW CAROUSEL */
-    #hfm-carousel-sow .carousel{ padding-bottom: 30px;}
-    #hfm-carousel-sow .carousel-inner .item-body{ display: block;}
-    #hfm-carousel-sow .carousel-inner .item-body > img{display: none;}
-    #hfm-carousel-sow .carousel-indicators{ left: 30%; text-align: left;}
-    /* SOW CAROUSEL */
+
 
   }
 
