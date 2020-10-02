@@ -277,7 +277,7 @@
   }
   .hfm-hero-video .bounce-in-btn{
     display: inline-block;
-    width: 70px;
+    width: 45px;
     margin: 0 auto;
     opacity: 0.5;
   }
@@ -285,7 +285,7 @@
   .vimeo-wrapper-container.hfm-hero-video{
     position: relative;
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     overflow: hidden;
   }
   .hfm-hero-video .overlay{
