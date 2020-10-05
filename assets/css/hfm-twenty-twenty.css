@@ -274,12 +274,12 @@
     bottom: 10px;
      -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    opacity: 0.5;
   }
   .hfm-hero-video .bounce-in-btn{
     display: inline-block;
     width: 45px;
     margin: 0 auto;
-    opacity: 0.5;
   }
   .hfm-hero-video .bounce-in-btn img{ width: 100%; }
   .vimeo-wrapper-container.hfm-hero-video{
@@ -328,7 +328,6 @@
   	60% {
       transform: translateY(-15px);
     }
-    100%{ opacity: 1; }
   }
   /* Bounce up and down animation */
 
@@ -353,7 +352,19 @@
     /* Navbar links */
 
     /* SOW HERO VIDEO */
-    .hfm-hero-video .bounce-in-btn:hover{ animation: bounceIn 2s; animation-fill-mode: forwards; }
+    .hfm-hero-video .bounce-in-btn{
+      -moz-animation: bounceIn 2s infinite;
+      -webkit-animation: bounceIn 2s infinite;
+      animation: bounceIn 2s infinite;
+      animation-fill-mode: forwards;
+    }
+    .hfm-hero-video .bounce-wrapper:hover{ opacity: 1; }
+    .hfm-hero-video .bounce-in-btn:hover{
+      -moz-animation-name: none;
+      -webkit-animation-name: none;
+      animation-name: none;
+    }
+
     /* SOW HERO VIDEO */
   }
 
