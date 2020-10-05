@@ -1,13 +1,17 @@
 <!-- HFM HERO NAVIGATION -->
 <div class="hfm-hero-navigation">
   <h6 class="section-title"><?php _e( $instance['title'] );?></h6>
-  <?php foreach ( $instance['tab_items'] as $i => $tab ) :?>
-    <?php $image = wp_get_attachment_url( $tab['tab_image'] );?>
-    <div class="hero-pane<?php echo $i == 0 ? ' active' : ''; ?>" id="target-<?php echo getUniqueID( $tab );?>">
-      <div class="hero-image" style="background-image:url(<?php _e( $image );?>);"></div>
-      <div class="overlay"></div>
-    </div>
-  <?php endforeach;?>
+  <div class="fullwidth">
+    <ul class="list-unstyled slider" data-infinite="false" data-behaviour="hero-navigation-slick" data-items="1" >
+      <?php foreach ( $instance['tab_items'] as $i => $tab ) :?>
+        <?php $image = wp_get_attachment_url( $tab['tab_image'] );?>
+        <div class="hero-pane" id="target-<?php echo getUniqueID( $tab );?>">
+          <div class="hero-image" style="background-image:url(<?php _e( $image );?>);"></div>
+          <div class="overlay"></div>
+        </div>
+      <?php endforeach;?>
+    </ul>
+  </div>
 
   <ul class="hero-nav-tabs list-unstyled">
     <?php foreach ( $instance['tab_items'] as $i => $tab ) :?>
