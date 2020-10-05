@@ -46,7 +46,7 @@
 
   /* SOW SLIDING NAVIGATION */
   .hfm-sliding-navigation .vertical-line{
-    border: solid 3px <?php _e( $instance['tab_item_color'] );?>;
+    border-color: <?php _e( $instance['tab_item_color'] );?>;
     background-color: <?php _e( $instance['tab_item_color'] );?>;
   }
   .hfm-sliding-navigation .sliding-tab > a{

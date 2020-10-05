@@ -220,6 +220,9 @@
     width: 1px;
     height: 97px;
     margin: 0 auto;
+    margin-bottom: 40px;
+    border-width: 2px;
+    border-style: solid;
   }
   .hfm-sliding-navigation .sliding-tab > a{
     height: 96px;
@@ -492,6 +495,12 @@
      .hfm-hero-navigation .hero-nav-tabs > li > a{ font-size: 48px; max-width: 100%; }
      .hfm-hero-navigation .hero-nav-tabs > li > .tab-content{ font-size: 16px; line-height: 1.63; width: 100%; }
      /* SOW HERO NAVIGATION */
+
+     /* SOW SLIDING NAVIGATION */
+     .hfm-sliding-navigation .slick-slide { margin: 0 10px; }
+     .hfm-sliding-navigation .vertical-line{ height: 49px; border-width: 1.5px; margin-bottom: 30px; }
+     .hfm-sliding-navigation .sliding-tab > a{ height: 48px; font-size: 48px; }
+     /* SOW SLIDING NAVIGATION */
 
    }
 
