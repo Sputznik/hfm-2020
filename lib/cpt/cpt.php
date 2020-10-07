@@ -14,5 +14,16 @@ add_filter( 'orbit_post_type_vars', function( $orbit_types ){
 		'supports'	=> array( 'title', 'editor','thumbnail' )
 	);
 
+	$orbit_types['videos'] = array(
+		'slug' 		=> 'videos',
+		'labels'	=> array(
+			'name' 					=> 'Videos',
+			'singular_name' => 'Video',
+		),
+		'menu_icon'	=> 'dashicons-video-alt3',
+		'public'		=> true,
+		'supports'	=> array( 'title', 'editor','thumbnail' )
+	);
+
 	return $orbit_types;
 } );
