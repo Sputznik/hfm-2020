@@ -346,10 +346,15 @@
   /* POST SERIES TEMPLATE */
   .articles-work .series-wrapper > .content > .desc,
   .articles-work .series-wrapper > .content > .title,
-  .articles-work .series-wrapper > .content > .btn-view{
+  .articles-work .videos-wrapper > .content > .desc,
+  .articles-work .videos-wrapper > .content > .title,
+  .articles-work .series-wrapper > .content > .btn-view,
+  .articles-work .videos-wrapper > .content > .btn-play,
+  .articles-work .videos-wrapper > .content > h4{
     font-family: "Barlow", sans-serif;
   }
-  .articles-work .series-wrapper{
+  .articles-work .series-wrapper,
+  .articles-work .videos-wrapper{
     position: relative;
     width: 100%;
     height: 764px;;
@@ -358,7 +363,8 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
-  .articles-work .series-wrapper > .content{
+  .articles-work .series-wrapper > .content,
+  .articles-work .videos-wrapper > .content{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -368,7 +374,8 @@
     -ms-transform:     translate(-50%,-50%);
     transform:         translate(-50%,-50%);
   }
-  .articles-work .series-wrapper > .content > .title{
+  .articles-work .series-wrapper > .content > .title,
+  .articles-work .videos-wrapper > .content > .title{
     height: 60px;
     font-size: 60px;
     font-weight: bold;
@@ -380,7 +387,8 @@
     color: #ffffff;
     margin: 0 0 20px 0;
   }
-  .articles-work .series-wrapper > .content > .desc{
+  .articles-work .series-wrapper > .content > .desc,
+  .articles-work .videos-wrapper > .content > .desc{
     height: 90px;
     font-size: 20px;
     font-weight: normal;
@@ -406,7 +414,8 @@
     color: #d68910;
     margin: 0 auto;
   }
-  .articles-work .series-wrapper > .overlay{
+  .articles-work .series-wrapper > .overlay,
+  .articles-work .videos-wrapper > .overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -418,6 +427,55 @@
     background-color: rgba(8,15,16,0.5);
   }
   /* POST SERIES TEMPLATE */
+
+  /* POST VIDEOS */
+  .articles-work .videos-wrapper > .overlay{ background-color: rgba(21,14,2,0.6) }
+  .articles-work .videos-wrapper > .content > h4{
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: condensed;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    margin-bottom: 40px
+  }
+  .articles-work .videos-wrapper > .content > .btn-play{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100px;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    color: #d68910;
+    text-decoration: none;
+    margin: 0 auto;
+  }
+  .articles-work .videos-wrapper > .content .play-icon{
+    display: inline-block;
+    width: 0;
+    height: 18px;
+    cursor: pointer;
+    justify-self : center;
+    border-style: solid;
+    border-width: 9px 0 9px 18px;
+    box-sizing: border-box;
+    background: transparent;
+    border-color: transparent transparent transparent #d68910;
+    transition: 100ms all ease;
+  }
+
+  /* .articles-work .videos-wrapper > .content > .btn-play:hover .play-icon{
+    border-color: transparent transparent transparent #404040;
+  } */
+
+  /* POST VIDEOS */
 
 
   @media(min-width: 769px){
@@ -523,15 +581,18 @@
     /* SOW HERO VIDEO */
 
     /* POST SERIES TEMPLATE */
-    .articles-work .series-wrapper > .content {
+    .articles-work .series-wrapper > .content,
+    .articles-work .videos-wrapper > .content {
       width: 90%;
       margin: 0;
     }
-    .articles-work .series-wrapper > .content > .title{
+    .articles-work .series-wrapper > .content > .title,
+    .articles-work .videos-wrapper > .content > .title{
       white-space: break-spaces;
       height: 100%;
     }
-    .articles-work .series-wrapper > .overlay{
+    .articles-work .series-wrapper > .overlay,
+    .articles-work .videos-wrapper > .overlay{
       margin: 0;
       width: 100%;
     }
@@ -594,9 +655,18 @@
      /* SOW SLIDING NAVIGATION */
 
      /* POST SERIES TEMPLATE */
-     .articles-work .series-wrapper > .content > .title{ font-size: 48px; }
-     .articles-work .series-wrapper > .content > .desc{ font-size: 16px; line-height: 1.63; }
+     .articles-work .series-wrapper > .content > .title,
+     .articles-work .videos-wrapper > .content > .title{ font-size: 48px; }
+     .articles-work .series-wrapper > .content > .desc,
+     .articles-work .videos-wrapper > .content > .desc{ font-size: 16px; line-height: 1.63; }
      /* POST SERIES TEMPLATE */
+
+     /* POST VIDEOS */
+     .articles-work .videos-wrapper > .content > h4{
+       font-size: 20px;
+       letter-spacing: 3.33px;
+     }
+     /* POST VIDEOS */
 
    }
 
