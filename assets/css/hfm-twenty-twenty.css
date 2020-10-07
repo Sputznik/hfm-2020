@@ -510,6 +510,21 @@
     }
 
     /* SOW HERO VIDEO */
+
+    /* POST VIDEOS */
+    .videos-wrapper .overlay{
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+    }
+    .videos-wrapper .overlay:hover{
+      -moz-transform    : scaleX(1.06);
+      -webkit-transform : scaleX(1.06);
+      -o-transform      : scaleX(1.06);
+      -ms-transform     : scaleX(1.06);
+      transform         : scaleX(1.06);
+    }
+    /* POST VIDEOS */
+
   }
 
   @media only screen and (max-width: 768px) and (min-width: 768px){
