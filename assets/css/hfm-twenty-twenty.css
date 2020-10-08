@@ -196,6 +196,32 @@
     -moz-user-select: none;
     -ms-user-select: none;
   }
+  /* FADE IN ANIMATION */
+  @keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+  }
+
+   @-moz-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+  }
+
+  @-o-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% { opacity:0; }
+    100% { opacity:1; }
+  }
+  /* FADE IN ANIMATION */
   .hfm-hero-navigation .hero-nav-tabs > li.hero-tab.active > a{ opacity: 1; }
   .hfm-hero-navigation .hero-nav-tabs > li > .tab-content{
     display: none;
@@ -210,7 +236,14 @@
     letter-spacing: normal;
     color: #ffffff;
   }
-  .hfm-hero-navigation .hero-nav-tabs > li.hero-tab.active > .tab-content{ display: inline-block; }
+  .hfm-hero-navigation .hero-nav-tabs > li.hero-tab.active > .tab-content{
+    display: inline-block;
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+  }
   /* SOW HERO NAVIGATION */
 
 
