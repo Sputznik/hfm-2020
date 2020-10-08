@@ -12,7 +12,7 @@
     <h2 class="title"><?php the_title();?></h2>
     <div class="desc"><?php the_content();?></div>
     <?php if( $post_type == 'series' ):?>
-      <a href="#" class="btn-view">View Project</a>
+      <a href="<?php the_permalink();?>" class="btn-view">View Project</a>
     <?php else:?>
       <a href="#" class="btn-play">
         <span class="play-icon"></span>
