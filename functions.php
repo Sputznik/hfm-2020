@@ -12,6 +12,7 @@ add_action('wp_enqueue_scripts',function(){
 //Include Files
 include('lib/custom-header/header-functions.php');
 include('lib/cpt/cpt.php');
+include('lib/custom-fields/custom-fields.php');
 
 //Add google fonts
 add_filter( 'sp_list_google_fonts', function( $fonts ){
