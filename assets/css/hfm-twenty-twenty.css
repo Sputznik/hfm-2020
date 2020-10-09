@@ -196,6 +196,10 @@
     -moz-user-select: none;
     -ms-user-select: none;
   }
+  .hfm-hero-navigation .hero-nav-tabs > li.hero-tab:focus,
+  .hfm-hero-navigation .hero-nav-tabs > li.hero-tab > a:focus{
+    outline: none;
+  }
   /* FADE IN ANIMATION */
   @keyframes fadeIn {
     0% { opacity:0; }
