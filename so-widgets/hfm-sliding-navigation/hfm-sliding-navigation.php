@@ -57,6 +57,12 @@ class HFM_SLIDING_NAVIGATION extends SiteOrigin_Widget {
 					'label' 		=> __( 'Show number of tabs', 'siteorigin-widgets' ),
 					'default' 	=> 3,
 				),
+				'tab_pane_width' => array(
+					'type' 				=> 'text',
+					'label' 			=> __( 'Tab content container width', 'siteorigin-widgets' ),
+					'default' 		=> '1170px',
+					'description'	=>	__( 'Must be in pixels or vw only. Default value 1170px', 'siteorigin-widgets' ),
+				),
 				'tab_item_color' => array(
 					'type' 		=> 'color',
 					'label' 	=> __( 'Tab Text Color', 'siteorigin-widgets' ),

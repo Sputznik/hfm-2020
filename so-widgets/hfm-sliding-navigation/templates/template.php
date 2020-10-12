@@ -6,6 +6,8 @@
 
   $infinite = $instance['infinite'] ? "true" : "false";
 
+  $container_width = !empty( $instance['tab_pane_width'] ) ?  $instance['tab_pane_width'] : '1170px';
+
 ?>
 
 <!-- HFM SLIDING NAVIGATION -->
@@ -51,6 +53,9 @@
   }
   .hfm-sliding-navigation .sliding-tab > a{
     color: <?php _e( $instance['tab_item_color'] );?>;
+  }
+  .hfm-sliding-navigation .sliding-pane-wrapper{
+    max-width: <?php _e( $container_width ); ?>;
   }
   /* SOW SLIDING NAVIGATION */
 
