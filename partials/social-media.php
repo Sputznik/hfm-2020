@@ -1,25 +1,20 @@
 <?php
 
 $icons = array(
-	'tw'  => array(
-		'title'	=> 'Twitter',
-		'icon'  => 'fa fa-twitter',
-		'url'   => "https://twitter.com/"
-	),
 	'fb'  => array(
 		'title'	=> 'Facebook',
 		'icon'  => 'fa fa-facebook',
-		'url'   => "https://www.facebook.com/"
+		'url'   => "https://www.facebook.com/TheHumanFactorMEDIA/?modal=admin_todo_tour"
 	),
 	'youtube'  => array(
 		'title'	=> 'Youtube',
 		'icon'  => 'fa fa-youtube-play',
-		'url'   => "https://www.youtube.com/"
+		'url'   => "https://www.youtube.com/channel/UCzpEIH1XeCBhlw54TDjiOOQ?view_as=subscriber"
 	),
 	'li'  => array(
 		'title'	=> 'Linkedin',
 		'icon'	=> 'fa fa-linkedin-square',
-		'url'   => "https://www.linkedin.com/"
+		'url'   => "https://www.linkedin.com/company/13007724/admin/"
 	),
 );
 
