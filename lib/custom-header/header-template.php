@@ -1,5 +1,14 @@
-<div class="hfm-navbar-wrapper">
-  <?php do_action('sp_logo');?>
+<?php
+  global $post;
+  $bg_class = '';
+  $is_sticky_page = get_post_meta( $post->ID, $key = 'sticky_transparent', true );
+
+  // Change header styles for sticky and single pages
+  if( is_single() || $is_sticky_page ){ $bg_class = 'hfm-brown-header'; }
+
+?>
+<div class="hfm-navbar-wrapper <?php _e( $bg_class );?>">
+  <?php if( is_single() || $is_sticky_page ){ do_action('sp_sticky_logo'); } else{ do_action('sp_logo'); } ?>
     <nav class="navbar navbar-default side-navigation">
       <!-- <div class="container-fluid"> -->
     		<div class="navbar-header">

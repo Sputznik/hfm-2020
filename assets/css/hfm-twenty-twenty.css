@@ -1,7 +1,8 @@
   /* HEADER */
   .hfm-navbar-wrapper{ position: relative; top: 46px; padding: 0 40px; }
-  .hfm-navbar-wrapper .logo-normal{ position: absolute;z-index: 9999; }
-  .navbar-brand { padding-top: 0px; padding-left: 0; height: 90px; max-width: 120px; height: 100%; }
+  .hfm-navbar-wrapper .logo-normal,
+  .hfm-brown-header.hfm-navbar-wrapper .logo-sticky{ position: absolute;z-index: 9999; }
+  .navbar-brand { padding-top: 0px; padding-left: 0; height: 90px; max-width: 120px; }
   .navbar-default.side-navigation { border: none; }
   .side-navigation .nav>li { float: right; }
   .navbar-default.side-navigation .nav > li > a { padding: 0 0 20px 0; }
@@ -53,6 +54,7 @@
     width: 39px;
     margin-bottom: 11px;
   }
+  .hfm-brown-header .navbar-default .navbar-toggle .icon-bar { background-color: #974b00; }
   .navbar-default.side-navigation .navbar-toggle .icon-bar:last-child{ margin-bottom: 0; }
   /* Hamburger */
 
@@ -631,6 +633,16 @@
     .articles-work .videos-wrapper > .overlay{
       margin: 0 18%;
     }
+
+    /* Brown Header Navbar links */
+    .hfm-brown-header .navbar-default .nav > li > a{
+      color: #974b00;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: 3px;
+    }
+    .hfm-brown-header .navbar-default .nav > li > a:hover{ color: #974b00 !important; }
+  /* Brown Header Navbar links */
 
   }
 
