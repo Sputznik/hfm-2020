@@ -14,7 +14,7 @@
     <?php if( $post_type == 'series' ):?>
       <a href="<?php the_permalink();?>" class="btn-view">View Project</a>
     <?php else:?>
-      <a href="#" class="btn-play">
+      <a href="<?php the_permalink();?>" class="btn-play">
         <span class="play-icon"></span>
         <span>Play</span>
       </a>
