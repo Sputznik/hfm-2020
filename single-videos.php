@@ -1,6 +1,7 @@
 <?php get_header();?>
 <?php
   global $youtube;
+  $client_name = get_post_meta( get_the_ID() ,'client_name', true );
   $video_id = $youtube->get_video_id( get_post_meta( get_the_ID(), 'video_url', true ) );
   $image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0];
   $arrow = get_stylesheet_directory_uri().'/assets/images/';
@@ -13,7 +14,7 @@
     </a>
     <?php if( have_posts() ): while ( have_posts() ): the_post();?>
       <div class="post-meta">
-        <h4 class="client-name">CLIENT NAME</h4>
+        <h4 class="client-name"><?php _e( $client_name );?></h4>
         <h2 class="title"><?php the_title();?></h2>
         <div class="desc"><?php the_content();?></div>
       </div>
