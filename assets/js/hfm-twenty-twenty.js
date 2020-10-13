@@ -35,6 +35,7 @@ $.fn.hfm_hero_navigation = function() {
     // SHOWS TAB PANE BASED ON THE SELECTED TAB
 		$el.on( 'click', function(e) {
       e.preventDefault();
+			e.stopPropagation();
       $el.activateTarget();
 		});
 
