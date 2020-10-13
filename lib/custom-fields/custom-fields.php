@@ -8,6 +8,10 @@ add_filter( 'orbit_meta_box_vars', function( $meta_box ){
 			'id'			=> 'video-meta-field',
 			'title'		=> 'Additional Information',
 			'fields'	=> array(
+				'client_name'	=> array(
+					'type' => 'text',
+					'text' => 'Client Name'
+				),
 				'video_url'	=> array(
 					'type' => 'text',
 					'text' => 'Youtube Video URL'
