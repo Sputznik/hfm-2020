@@ -141,7 +141,7 @@
 
   /* Indicators */
 	#hfm-carousel-sow .carousel-indicators {
-		left: calc( 50% + 60px );
+		left: calc( 50% + 50px );
 		margin-left: 0;
 		width: 20%;
 		text-align: left;
