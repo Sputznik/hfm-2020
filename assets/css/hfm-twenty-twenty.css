@@ -73,6 +73,9 @@
   /* FOOTER SECTION ONE */
   .hfm-footer-wrapper .section-one{ display: grid; grid-template-columns: 1fr 1fr; }
   .hfm-footer-wrapper .left-column{ width: 100%; max-width: 500px; display: grid; grid-template-columns: 1fr 1fr; }
+  .footer-section-two .site-logo a{text-decoration: none;}
+  .hfm-footer-wrapper .hfm-logo a{ display: inline-block; }
+  .hfm-footer-wrapper .hfm-logo a:focus{ outline: none; }
   .hfm-footer-wrapper .hfm-logo img{ max-width: 120px; width: 100%;}
   .hfm-footer-wrapper .contact h6{ margin-top: 0; font-weight: bold; }
   .hfm-footer-wrapper .contact h6,

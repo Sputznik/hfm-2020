@@ -7,7 +7,9 @@
 		<div class="left-column">
 
 			<div class="hfm-logo">
-				<img src="<?php _e( "$img_path/hfm-logo.png" );?>">
+				<a href="<?php _e( get_bloginfo('url') );?>">
+					<img src="<?php _e( "$img_path/hfm-logo.png" );?>">
+				</a>
 			</div>
 			<div class="contact">
 				<h6>Manhattan</h6>
