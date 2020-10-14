@@ -1,4 +1,5 @@
 <?php
+  global $post;
   global $youtube;
   $video_id = $youtube->get_video_id( get_post_meta( get_the_ID(), 'video_url', true ) );
   $image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0];
