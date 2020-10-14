@@ -889,6 +889,7 @@
       color: #ffffff;
       opacity: 0.6;
     }
+    body > .hfm-brown-header .navbar-toggle::before{ opacity: 1; }
     /* SIDE NAVIGATION CLOSE BUTTON */
 
     /* SOW HERO VIDEO */
