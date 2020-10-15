@@ -1,9 +1,9 @@
 /* SOW HERO NAVIGATION */
-$.fn.hfm_hero_navigation = function() {
+jQuery.fn.hfm_hero_navigation = function() {
 
 	return this.each(function() {
 
-		var $el = $(this);
+		var $el = jQuery(this);
 
 		/* ACTIVATE TARGET */
 		$el.activateTarget = function(){
@@ -13,20 +13,20 @@ $.fn.hfm_hero_navigation = function() {
 
 			$el.activateTargetPane( heroPane );			/* ACTIVATE TARGET PANE */
 
-      $('.hfm-hero-navigation').find('.hero-tab.active').removeClass('active'); 		/* REMOVE ACTIVE CLASS FROM TAB */
+      jQuery('.hfm-hero-navigation').find('.hero-tab.active').removeClass('active'); 		/* REMOVE ACTIVE CLASS FROM TAB */
 
-      $(tabParent).addClass('active'); 		/* ADD ACTIVE CLASS TO TAB */
+      jQuery(tabParent).addClass('active'); 		/* ADD ACTIVE CLASS TO TAB */
 		};
 		/* ACTIVATE TARGET */
 
     /* ACTIVATE TARGET PANE */
     $el.activateTargetPane = function( heroPane ){
 
-      var targetSlideIndex = $(heroPane).data('slick-index');
+      var targetSlideIndex = jQuery(heroPane).data('slick-index');
 
 			/* SLIDES TO THE SELECTED TARGET PANE */
-      if ( $('[data-behaviour~=hero-navigation-slick]').slick('slickCurrentSlide') !== targetSlideIndex ){
-        $('[data-behaviour~=hero-navigation-slick]').slick('slickGoTo', targetSlideIndex );
+      if ( jQuery('[data-behaviour~=hero-navigation-slick]').slick('slickCurrentSlide') !== targetSlideIndex ){
+        jQuery('[data-behaviour~=hero-navigation-slick]').slick('slickGoTo', targetSlideIndex );
 			}
 
     };
@@ -44,12 +44,12 @@ $.fn.hfm_hero_navigation = function() {
 
 }; /* SOW HERO NAVIGATION */
 
-$(document).ready(function(){
+jQuery(document).ready(function(){
 
   /* FOR SIDE NAVIGATION */
-  $('[data-toggle="collapse"]').on('click', function() {
+  jQuery('[data-toggle="collapse"]').on('click', function() {
 
-    $togglerTarget = $($(this).data('target'));
+    $togglerTarget = jQuery(jQuery(this).data('target'));
 
     $togglerTarget.animate({
       'width': 'toggle'
@@ -58,11 +58,11 @@ $(document).ready(function(){
   });
   /* FOR SIDE NAVIGATION */
 
-  $('a[data-behaviour~=hfm-hero-navigation]').hfm_hero_navigation(); /* SOW HERO NAVIGATION */
+  jQuery('a[data-behaviour~=hfm-hero-navigation]').hfm_hero_navigation(); /* SOW HERO NAVIGATION */
 
-  $('[data-behaviour~=hero-navigation-slick]').each( function(){
+  jQuery('[data-behaviour~=hero-navigation-slick]').each( function(){
 
-		var $el = $( this );
+		var $el = jQuery( this );
 
 		$el.slick({
 			infinite				: false,
@@ -94,11 +94,11 @@ $(document).ready(function(){
 
 	});
 
-	$('[data-behaviour~=hero-navigation-slick]').slick("refresh");
+	jQuery('[data-behaviour~=hero-navigation-slick]').slick("refresh");
 
 	/* CHANGE THE SLIDING SPEED AFTER THE SLICK INITIALIZED */
-	$('[data-behaviour~=hero-navigation-slick]').on('afterChange', function( event, slick, currentSlide, nextSlide ){
-    $('[data-behaviour~=hero-navigation-slick]').slick('slickSetOption', 'speed', '600');
+	jQuery('[data-behaviour~=hero-navigation-slick]').on('afterChange', function( event, slick, currentSlide, nextSlide ){
+    jQuery('[data-behaviour~=hero-navigation-slick]').slick('slickSetOption', 'speed', '600');
 	});
 
 });
