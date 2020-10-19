@@ -10,7 +10,11 @@
       <h4>HUMAN FACTOR MEDIA</h4>
     <?php endif;?>
     <h2 class="title"><?php the_title();?></h2>
-    <div class="desc"><?php the_content();?></div>
+    <?php if( $post_type == 'series' ):?>
+      <div class="desc"><?php the_excerpt();?></div>
+    <?php else: ?>
+      <div class="desc"><?php the_content();?></div>
+    <?php endif; ?>
     <?php if( $post_type == 'series' ):?>
       <a href="<?php the_permalink();?>" class="btn-view">View Project</a>
     <?php else:?>

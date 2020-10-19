@@ -7,6 +7,7 @@
       </div>
       <div class="post-content">
         <h6 class="title"><?php the_title();?></h6>
+        <?php the_excerpt();?>
         <?php the_content();?>
       </div>
     <?php endwhile;endif;?>

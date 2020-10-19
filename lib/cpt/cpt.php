@@ -11,7 +11,7 @@ add_filter( 'orbit_post_type_vars', function( $orbit_types ){
 		),
 		'menu_icon'	=> 'dashicons-album',
 		'public'		=> true,
-		'supports'	=> array( 'title', 'editor','thumbnail' )
+		'supports'	=> array( 'title', 'editor','thumbnail', 'excerpt' )
 	);
 
 	$orbit_types['videos'] = array(
