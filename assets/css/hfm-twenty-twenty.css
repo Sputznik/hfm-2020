@@ -644,6 +644,7 @@
     letter-spacing: normal;
     color: #974b00;
     margin-top: 40px;
+    text-align: left;
   }
   .articles-video .video-meta > .desc,
   .articles-video .video-meta > p{
