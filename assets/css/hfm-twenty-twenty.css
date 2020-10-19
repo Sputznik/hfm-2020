@@ -586,6 +586,7 @@
     margin: 206px 0 180px;
     text-align: center;
   }
+  .single-post-template .post-content{ margin-bottom: 80px; }
   .single-post-template > .header > .btn-nav-back{
     display: inline-block;
     opacity: 0.5;
