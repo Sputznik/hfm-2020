@@ -27,3 +27,16 @@ add_filter( 'orbit_post_type_vars', function( $orbit_types ){
 
 	return $orbit_types;
 } );
+
+/* PUSH INTO THE GLOBAL VARS OF ORBIT TAXNOMIES */
+add_filter( 'orbit_taxonomy_vars', function( $orbit_tax ){
+
+	$orbit_tax['video_category']	= array(
+    'label'			  => 'Video Category',
+    'slug' 			  => 'video_category',
+    'post_types'	=> array( 'videos' )
+  );
+
+  return $orbit_tax;
+
+} );
