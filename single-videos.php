@@ -8,10 +8,10 @@
 ?>
   <div class="horizontal-decoration"></div>
   <div class="container-fluid single-post-template single-post-videos">
-    <a href="javascript:history.back()" class="btn-nav-back">
+    <!-- <a href="javascript:history.back()" class="btn-nav-back">
       <span class="back-icon"></span>
       <span>All Originals</span>
-    </a>
+    </a> -->
     <?php if( have_posts() ): while ( have_posts() ): the_post();?>
       <div class="post-meta">
         <h4 class="client-name"><?php _e( $client_name );?></h4>
