@@ -60,7 +60,14 @@ class HFM_HERO_NAVIGATION extends SiteOrigin_Widget {
         			'default' => '',
         			'rows' 		=> 5
 						),
-
+						'image_overlay' => array(
+							'type' 				=> 'slider',
+							'label' 			=> __( 'Image Overlay', 'siteorigin-widgets' ),
+							'default' 		=> 4,
+							'min' 				=> 0,
+							'max'					=> 10,
+							'integer' 		=> true,
+						),
 					)
 				)
 			),

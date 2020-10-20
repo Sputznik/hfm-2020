@@ -3,10 +3,13 @@
   <div class="fullwidth">
     <div class="slider" data-infinite="false" data-behaviour="hero-navigation-slick" data-items="1" >
       <?php foreach ( $instance['tab_items'] as $i => $tab ) :?>
-        <?php $image = wp_get_attachment_url( $tab['tab_image'] );?>
+        <?php
+          $image = wp_get_attachment_url( $tab['tab_image'] );
+          $overlay = !empty( $tab['image_overlay'] ) ? $tab['image_overlay']/10 : '0.4';
+        ?>
         <div class="hero-pane" id="target-<?php echo getUniqueID( $tab );?>">
           <div class="hero-image" style="background-image:url(<?php _e( $image );?>);"></div>
-          <div class="overlay"></div>
+          <div class="overlay" style="background: rgba(0,0,0,<?php _e( $overlay );?>);"></div>
         </div>
       <?php endforeach;?>
     </div>
