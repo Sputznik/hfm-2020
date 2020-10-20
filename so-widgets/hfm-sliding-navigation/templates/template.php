@@ -13,7 +13,7 @@
 ?>
 
 <!-- HFM SLIDING NAVIGATION -->
-<div class="hfm-sliding-navigation">
+<div class="hfm-sliding-navigation container-fluid">
   <!-- TABS REPEATER -->
   <div class="fullwidth">
     <div class="vertical-line"></div>
