@@ -6,6 +6,8 @@
 
   $infinite = $instance['infinite'] ? "true" : "false";
 
+  $initial_tab  = !empty( $instance['initial_tab'] ) ?  $instance['initial_tab'] : '0';
+
   $container_width = !empty( $instance['tab_pane_width'] ) ?  $instance['tab_pane_width'] : '1170px';
 
 ?>
@@ -16,7 +18,7 @@
   <div class="fullwidth">
     <div class="vertical-line"></div>
   	<div class="container-navigation">
-      <ul class="sliding-nav-tabs list-unstyled slider" data-infinite="<?php _e( $infinite );?>" data-behaviour="sliding-navigation-slick" data-items="<?php _e( $instance['show_tabs'] );?>" >
+      <ul class="sliding-nav-tabs list-unstyled slider" data-initial="<?php _e( $initial_tab );?>" data-infinite="<?php _e( $infinite );?>" data-behaviour="sliding-navigation-slick" data-items="<?php _e( $instance['show_tabs'] );?>" >
         <?php foreach ( $instance['tab_items'] as $i => $tab ) :?>
           <li class="sliding-tab">
             <a href="#sliding-<?php echo getUniqueID( $tab );?>" data-behaviour="hfm-sliding-navigation">
@@ -36,7 +38,7 @@
 
   <div class="sliding-pane-wrapper">
     <?php foreach ( $instance['tab_items'] as $i => $tab ) :?>
-      <div class="sliding-pane<?php echo $i == 0 ? ' active' : ''; ?>" id="sliding-<?php echo getUniqueID( $tab );?>">
+      <div class="sliding-pane<?php echo(  $i == $initial_tab ) ? ' active' : ''; ?>" id="sliding-<?php echo getUniqueID( $tab );?>">
         <?php echo siteorigin_panels_render( 'tab-desc-'.$i, true, $tab['tab_content'] );?>
       </div>
     <?php endforeach;?>

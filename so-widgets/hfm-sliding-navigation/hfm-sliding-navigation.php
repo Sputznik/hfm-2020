@@ -57,6 +57,12 @@ class HFM_SLIDING_NAVIGATION extends SiteOrigin_Widget {
 					'label' 		=> __( 'Show number of tabs', 'siteorigin-widgets' ),
 					'default' 	=> 3,
 				),
+				'initial_tab' => array(
+					'type' 			=> 'number',
+					'label' 		=> __( 'Initial Tab Index', 'siteorigin-widgets' ),
+					'default' 	=> 0,
+					'description'	=>	__( 'Set a specific tab as the first tab. Default tab index : 0', 'siteorigin-widgets' ),
+				),
 				'tab_pane_width' => array(
 					'type' 				=> 'text',
 					'label' 			=> __( 'Tab content container width', 'siteorigin-widgets' ),

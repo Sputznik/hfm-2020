@@ -71,6 +71,7 @@ jQuery(document).ready(function(){
 			slidesToShow		: $el.data('items'),
 			slidesToScroll	: 1,
 			speed						: 10,
+			initialSlide    : $el.data('initial'),
       // slidesPerRow		: $el.data('items'),
       variableWidth		: true,
 			arrows					: false,
