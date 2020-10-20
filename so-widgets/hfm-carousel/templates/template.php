@@ -1,5 +1,10 @@
+<?php
+
+  $timeout  = !empty( $instance['timeout'] ) ?  $instance['timeout'] : '5000';
+
+?>
 <!-- Carousel -->
-<div id="hfm-carousel-sow" class="carousel slide" data-ride="carousel">
+<div id="hfm-carousel-sow" class="carousel slide" data-ride="carousel" data-interval="<?php _e( $timeout );?>">
 
   <!-- Indicators -->
   <ol class="carousel-indicators">

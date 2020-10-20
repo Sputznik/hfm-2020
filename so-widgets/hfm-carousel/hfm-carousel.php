@@ -46,7 +46,13 @@ class HFM_CAROUSEL extends SiteOrigin_Widget {
 						),
 
 					)
-				)
+				),
+				'timeout' => array(
+					'type' 			=> 'text',
+					'label' 		=> __( 'Timeout', 'siteorigin-widgets' ),
+					'default' 	=> '5000',
+					'description'	=>	__( 'How long each frame is displayed for in milliseconds.', 'siteorigin-widgets' ),
+				),
 			),
 			//The $base_folder path string.
 			get_template_directory()."/so-widgets/hfm-carousel"
