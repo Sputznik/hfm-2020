@@ -101,4 +101,7 @@ jQuery(document).ready(function(){
     jQuery('[data-behaviour~=hero-navigation-slick]').slick('slickSetOption', 'speed', '600');
 	});
 
+	/* SINGLE VIDEOS TEMPLATE */
+	jQuery('.single-post-videos .btn-play').click();
+
 });
