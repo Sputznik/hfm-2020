@@ -1063,6 +1063,13 @@
      .image-grid-wrapper .image-grid-container > .grid-img{ flex: 0 0 100%; text-align: center; }
      .image-grid-wrapper .image-grid-container .grid-img{ margin-bottom: 40px !important; }
      .image-grid-wrapper .image-grid-container > .grid-img:last-child{ margin-bottom: 0 !important; }
+
+     /* SOW SLIDING NAVIGATION */
+     .hfm-sliding-navigation .sliding-tab { display: flex; flex-wrap: wrap; flex-direction: column; }
+     .hfm-sliding-navigation .sliding-tab > a{ height: 100%; font-size: 34px; }
+     .hfm-sliding-navigation .sliding-tab > .tab-subtitle{ font-size: 12px; }
+     .hfm-sliding-navigation .sliding-tab { max-width: 65vw;  }
+     /* SOW SLIDING NAVIGATION */
    }
 
    @media(max-width: 425px){
