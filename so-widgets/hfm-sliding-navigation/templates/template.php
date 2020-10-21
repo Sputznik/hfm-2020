@@ -24,9 +24,9 @@
             <a href="#sliding-<?php echo getUniqueID( $tab );?>" data-behaviour="hfm-sliding-navigation">
               <?php _e( $tab['tab_title'] );?>
             </a>
-            <!-- <span class="tab-subtitle">
-              <?php //_e( $tab['tab_subtitle'] );?>
-            </span> -->
+            <span class="tab-subtitle">
+              <?php echo( ( $tab['tab_subtitle'] ) ? $tab['tab_subtitle'] : '' );?>
+            </span>
           </li>
         <?php endforeach;?>
       </ul> <!-- NAV TABS end.. -->
@@ -53,7 +53,8 @@
     border-color: <?php _e( $instance['tab_item_color'] );?>;
     background-color: <?php _e( $instance['tab_item_color'] );?>;
   }
-  .hfm-sliding-navigation .sliding-tab > a{
+  .hfm-sliding-navigation .sliding-tab > a,
+  .hfm-sliding-navigation .sliding-tab > .tab-subtitle{
     color: <?php _e( $instance['tab_item_color'] );?>;
   }
   .hfm-sliding-navigation .sliding-pane-wrapper{

@@ -41,11 +41,11 @@ class HFM_SLIDING_NAVIGATION extends SiteOrigin_Widget {
 							'label' 		=> __( 'Tab Title', 'siteorigin-widgets' ),
 							'default' 	=> '',
 						),
-						// 'tab_subtitle' => array(
-						// 	'type' 			=> 'text',
-						// 	'label' 		=> __( 'Tab Subtitle', 'siteorigin-widgets' ),
-						// 	'default' 	=> '',
-						// ),
+						'tab_subtitle' => array(
+							'type' 			=> 'text',
+							'label' 		=> __( 'Tab Subtitle', 'siteorigin-widgets' ),
+							'default' 	=> '',
+						),
 						'tab_content' => array(
 							'type' 	=> 'builder',
 							'label' => __( 'Tab Content', 'siteorigin-widgets'),
