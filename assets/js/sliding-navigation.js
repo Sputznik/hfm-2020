@@ -10,15 +10,16 @@ jQuery.fn.hfm_sliding_navigation = function() {
     $el.getTarget = function(){
       var selectedTab = jQuery($el).attr('href');
       var slidingPane = jQuery('.sliding-pane-wrapper').find(selectedTab);
-			$el.showActivePane( slidingPane );
+			/* SHOW SLIDING PANE ONLY IF NOT ACTIVE */
+			if( !slidingPane.hasClass('active') ){ $el.showActivePane( slidingPane ); }
 		};
     /* SELECTED TAB */
 
 		/* SHOWS SLIDING PANE BASED ON THE SELECTED TAB */
 		$el.showActivePane = function( slidingPane ){
 
-			jQuery('.sliding-pane-wrapper').find('.sliding-pane.active').animate({ opacity: 0 }, 800, "swing").removeClass('active');    /* REMOVE ACTIVE CLASS FROM SLIDING PANE */
-      jQuery(slidingPane).animate({ opacity: 1 }, 800, "swing").addClass('active'); 		/* ADD ACTIVE CLASS FROM SLIDING PANE */
+			jQuery('.sliding-pane-wrapper').find('.sliding-pane.active').animate({ opacity: 0 }, 1000, "swing").removeClass('active');    /* REMOVE ACTIVE CLASS FROM SLIDING PANE */
+      jQuery(slidingPane).animate({ opacity: 1 }, 1000, "swing").addClass('active'); 		/* ADD ACTIVE CLASS FROM SLIDING PANE */
 		};
 		/* SHOWS SLIDING PANE BASED ON THE SELECTED TAB */
 
@@ -39,6 +40,8 @@ jQuery.fn.hfm_sliding_navigation = function() {
     $el.on('click', function (e) {
 
         e.preventDefault();
+
+				e.stopPropagation();
 
         $el.getTargetParent( jQuery(this).parent() );
 
@@ -107,6 +110,10 @@ jQuery(document).ready(function(){
 	jQuery('[data-behaviour~=sliding-navigation-slick]').on('swipe', function(event, slick, direction){
 		var currentTabIndex = jQuery('.slick-slider').slick('slickCurrentSlide'); /* Gets Current Active Tab Index */
 		jQuery('.sliding-tab[data-slick-index="'+currentTabIndex+'"]').children().click(); /* Triggers click event */
+	});
+
+	jQuery('.sliding-tab.slick-current').on('click', function(e){
+		e.preventDefault();
 	});
 
 });
