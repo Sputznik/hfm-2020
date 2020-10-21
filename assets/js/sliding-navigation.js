@@ -96,11 +96,17 @@ jQuery(document).ready(function(){
 
 	});
 
-	jQuery(".slider").slick("refresh");
+	jQuery("[data-behaviour~=sliding-navigation-slick]").slick("refresh");
 
 	/* CHANGE THE SLIDING SPEED AFTER THE SLICK INITIALIZED */
-	jQuery(".slider").on('afterChange', function( event, slick, currentSlide, nextSlide ){
-    jQuery(".slider").slick('slickSetOption', 'speed', '800');
+	jQuery("[data-behaviour~=sliding-navigation-slick]").on('afterChange', function( event, slick, currentSlide, nextSlide ){
+    jQuery("[data-behaviour~=sliding-navigation-slick]").slick('slickSetOption', 'speed', '800');
+	});
+
+	// On Swipe Event
+	jQuery('[data-behaviour~=sliding-navigation-slick]').on('swipe', function(event, slick, direction){
+		var currentTabIndex = jQuery('.slick-slider').slick('slickCurrentSlide'); /* Gets Current Active Tab Index */
+		jQuery('.sliding-tab[data-slick-index="'+currentTabIndex+'"]').children().click(); /* Triggers click event */
 	});
 
 });
