@@ -843,6 +843,8 @@
     }
     /* POST VIDEOS */
 
+    #hfm-carousel-sow .carousel-indicators { left: calc( 50% + 53px ); }
+
   }
 
   @media only screen and (max-width: 768px) and (min-width: 768px){
