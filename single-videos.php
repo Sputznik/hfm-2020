@@ -6,12 +6,20 @@
   $image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' )[0];
   $arrow = get_stylesheet_directory_uri().'/assets/images/';
 ?>
-  <div class="horizontal-decoration"></div>
+  <div class="horizontal-decoration">
+    <div class="container-fluid">
+      <?php do_action('sp_logo'); ?>
+    </div>
+  </div>
   <div class="container-fluid single-post-template single-post-videos">
     <!-- <a href="javascript:history.back()" class="btn-nav-back">
       <span class="back-icon"></span>
       <span>All Originals</span>
     </a> -->
+    <a href="https://orbit1.sitehub.in/hfm2020/our-work/" class="btn-nav-back">
+      <span class="back-icon"></span>
+      <span>Back</span>
+    </a>
     <?php if( have_posts() ): while ( have_posts() ): the_post();?>
       <div class="post-meta">
         <h4 class="client-name"><?php _e( $client_name );?></h4>
