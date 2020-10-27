@@ -23,7 +23,9 @@
     ?>
 		<div class="item <?php _e( $class );?>">
       <div class="item-body">
-        <img src="<?php _e( $image );?>" alt="carousel-image">
+				<div class="item-image">
+        	<img src="<?php _e( $image );?>" alt="carousel-image">
+				</div>
         <div class="item-content">
           <?php echo siteorigin_panels_render( 'carousel-desc-'.$i, true, $item['carousel_content'] );?>
         </div>
