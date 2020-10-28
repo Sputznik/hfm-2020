@@ -75,7 +75,7 @@ h5{
 
 
 /*-------Our Work Page----*/
-.page-id-154 .hfm-sliding-navigation .sliding-pane-wrapper{
+.page-id-1528 .hfm-sliding-navigation .sliding-pane-wrapper{
   max-width:100vw;
   overflow: hidden;
 }
@@ -274,22 +274,22 @@ h5{
   max-width:55%;
   margin-top:-500px!important;
   }
-	body.page-id-52 .container{
+	body.page-id-1532 .container{
     background-image: linear-gradient(to top, #090601 30%, rgba(9, 6, 1, 0))!important;
   }
- 	body.page-id-52 .sow-slider-base ul.sow-slider-images li.sow-slider-image.sow-slider-image-cover{
+ 	body.page-id-1532 .sow-slider-base ul.sow-slider-images li.sow-slider-image.sow-slider-image-cover{
 	height:90vh!important;
 }
 }
 
-body.page-id-52{
+body.page-id-1532{
 	background:#090601;
 }
-body.page-id-52 .container{
+body.page-id-1532 .container{
   background-image: linear-gradient(to top, #090601 50%, rgba(9, 6, 1, 0));
 }
 @media only screen and (max-width: 1239px) and (min-width: 1024px){
- body.page-id-52 h1{font-size:58px;}
+ body.page-id-1532 h1{font-size:58px;}
 }
 /* CONTACT PAGE */
 
