@@ -16,7 +16,7 @@
       <span class="back-icon"></span>
       <span>All Originals</span>
     </a> -->
-    <a href="https://orbit1.sitehub.in/hfm2020/our-work/" class="btn-nav-back">
+    <a href="<?php _e( home_url( '/our-work/' ) ); ?>" class="btn-nav-back">
       <span class="back-icon"></span>
       <span>Back</span>
     </a>
