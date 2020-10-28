@@ -44,3 +44,14 @@ add_filter( 'sp_prefooter_class', function(){ return 'container-fluid hfm-footer
 function getUniqueID( $data ){
 	return substr( md5( json_encode( $data ) ), 0, 8 );
 }
+
+// REDIRECT ARCHIVE PAGE
+function archive_to_custom_hfm_archive() {
+
+  if( is_post_type_archive( 'videos' ) ) {
+      wp_redirect( home_url( '/our-work/' ), 301 );
+      exit();
+  }
+
+}
+add_action( 'template_redirect', 'archive_to_custom_hfm_archive' );
