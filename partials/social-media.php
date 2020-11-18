@@ -1,6 +1,13 @@
 <?php
 
+$image = get_stylesheet_directory_uri().'/assets/images/ig-icon.png';
+
 $icons = array(
+	'ig'  => array(
+		'title'	=> 'Instagram',
+		'icon'  => $image,
+		'url'   => "https://www.instagram.com/humanfactormedia/"
+	),
 	'fb'  => array(
 		'title'	=> 'Facebook',
 		'icon'  => 'fa fa-facebook',
@@ -24,7 +31,12 @@ $icons = array(
   <?php foreach( $icons as $key => $icon ): $class = $key." social-fa-icon"; ?>
     <li>
       <a class='<?php _e( $class ); ?>' title='<?php _e( $icon['title'] );?>' target='_blank' href='<?php _e( $icon['url'] );?>'>
-        <i class='<?php _e( $icon['icon'] );?>'></i>
+				<?php if( $key === 'ig' ):?>
+					<img style="margin-bottom:8px;" src="<?php _e( $icon['icon'] );?>" alt="<?php _e( $icon['title'] );?>" >
+				<?php else:?>
+					<i class='<?php _e( $icon['icon'] );?>'></i>
+				<?php endif;?>
+
       </a>
     </li>
   <?php endforeach;?>
