@@ -1,7 +1,7 @@
 <?php
 
   $timeout  = !empty( $instance['timeout'] ) ?  $instance['timeout'] : '5000';
-
+  $arr_next = get_stylesheet_directory_uri().'/assets/images/cara-arrow.png';
 ?>
 <!-- Carousel -->
 <div id="hfm-carousel-sow" class="carousel slide" data-ride="carousel" data-interval="<?php _e( $timeout );?>">
@@ -12,6 +12,11 @@
       <?php $indicator=" "; if( $slide==0 ){ $indicator= "active"; } ?>
       <li data-target="#hfm-carousel-sow" data-slide-to="<?php _e( $slide );?>" class="<?php _e( $indicator );?>"></li>
     <?php  $slide++; endforeach;?>
+    <span class="next-icon">
+      <a href="#hfm-carousel-sow" role="button" data-slide="next">
+        <img src="<?php _e( $arr_next );?>" alt="Next">
+      </a>
+    </span>
   </ol>
 
   <!-- Wrapper for slides -->

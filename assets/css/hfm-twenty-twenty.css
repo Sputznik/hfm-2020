@@ -182,6 +182,9 @@
 		opacity: 1; background-color: #974b00;
 	}
 
+  #hfm-carousel-sow .carousel-indicators .next-icon a{ display:inline-block; height: 20px; width:30px; position: relative; margin-left: -6px; }
+  #hfm-carousel-sow .carousel-indicators .next-icon img{ width:100%; position: absolute; top: -5px; }
+
 	@media( max-width: 1200px ){
 		#hfm-carousel-sow .carousel-inner .item-body .item-image{ display: none; }
 		#hfm-carousel-sow .carousel-inner .item-body .item-content{ width: 100%; }
