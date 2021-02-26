@@ -124,11 +124,20 @@
   }
   .social-icons{ margin: 0;}
 	.social-icons li{ display: inline-block; margin-right: 20px;}
+  .social-icons li a{ text-decoration: none; outline: none; }
 	.social-icons li:last-child{ margin-right: 0;}
 	.social-icons .fa{ font-size: 24px;}
 
   .hfm-footer-wrapper .copyright, .hfm-footer-wrapper .social-icons{ width: 50%; }
 	.hfm-footer-wrapper .social-icons{ text-align: end; }
+	.hfm-footer-wrapper .privacy-policy .vertical-line{
+    display: inline-block;
+    height: 12px;
+    width: 1.5px;
+    margin-left: 12px;
+    background-color: #ffffff;
+	}
+
   /* FOOTER SECTION TWO */
 
 

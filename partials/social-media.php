@@ -28,6 +28,10 @@ $icons = array(
 ?>
 
 <ul class="social-icons list-unstyled">
+	<li class="privacy-policy">
+		<a href="https://humanfactormedia.co/privacy-policy/">Privacy</a>
+		<span class="vertical-line"></span>
+	</li>
   <?php foreach( $icons as $key => $icon ): $class = $key." social-fa-icon"; ?>
     <li>
       <a class='<?php _e( $class ); ?>' title='<?php _e( $icon['title'] );?>' target='_blank' href='<?php _e( $icon['url'] );?>'>
