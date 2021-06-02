@@ -13,7 +13,7 @@
 			</div>
 			<div class="contact">
 				<h6>One Nashville Place</h6>
-				<p>150 4TH AVENUE NORTH 20th Floor NASHVILLE, TN 37219</p>
+				<p>150 4TH AVENUE NORTH 20th Floor NASHVILLE <br/> TN 37219</p>
 			</div>
 			<div class="contact">
 				<h6>Brooklyn</h6>
