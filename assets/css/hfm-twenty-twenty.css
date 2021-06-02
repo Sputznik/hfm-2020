@@ -79,7 +79,7 @@
   .hfm-footer-wrapper .left-column{
     display: flex;
 		width: 100%;
-		max-width: 400px;
+		max-width: 600px;
 		justify-content: space-between;
   }
   .footer-section-two .site-logo a{text-decoration: none;}
@@ -1073,6 +1073,15 @@
   	/* Override navabar collapse breakpoint for footer menu */
   }
 
+  @media only screen and (max-width: 768px) and (min-width: 680px){
+    .hfm-footer-wrapper .left-column{
+      max-width: 450px;
+    }
+    .hfm-footer-wrapper .hfm-logo img{
+      max-width: 100px;
+    }
+  }
+
   @media(max-width: 767px){
     /* SOw-IMG-GRID */
     .image-grid-wrapper > h4{ font-size: 20px; letter-spacing: 3.33px; }
@@ -1092,7 +1101,7 @@
      /* FOOTER */
      .hfm-footer-wrapper{ padding: 30px 22px 23px 20px; }
      .hfm-footer-wrapper .hfm-logo img { max-width: 80px;}
-     .hfm-footer-wrapper .left-column{ flex-direction: column; min-height: 220px; max-width: 50%; }
+     .hfm-footer-wrapper .left-column{ flex-direction: column; min-height: 350px; max-width: 50%; }
      .hfm-footer-wrapper .section-two{ flex-direction: column-reverse; margin-top: 40px; }
      .hfm-footer-wrapper .copyright, .hfm-footer-wrapper .social-icons{ width: 100%; }
       .hfm-footer-wrapper .copyright{ align-self: flex-start; }

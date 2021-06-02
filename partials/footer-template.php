@@ -12,8 +12,12 @@
 				</a>
 			</div>
 			<div class="contact">
-				<h6>Manhattan</h6>
-				<p>79 Madison Avenue 3rd Floor New York, NY 10016</p>
+				<h6>One Nashville Place</h6>
+				<p>150 4TH AVENUE NORTH 20th Floor NASHVILLE, TN 37219</p>
+			</div>
+			<div class="contact">
+				<h6>Brooklyn</h6>
+				<p>155 Water Street Suite 3-16 Brooklyn, NY 11201</p>
 			</div>
 
 		</div> <!-- Left-column ends.. -->
