@@ -12,12 +12,10 @@
 				</a>
 			</div>
 			<div class="contact">
-				<h6>One Nashville Place</h6>
-				<p>150 4TH AVENUE NORTH 20th Floor NASHVILLE <br/> TN 37219</p>
+				<?php do_action('hfm_sidebar', 'hfm-footer-contact-one'); ?>
 			</div>
 			<div class="contact">
-				<h6>Brooklyn</h6>
-				<p>155 Water Street Suite 3-16 Brooklyn, NY 11201</p>
+				<?php do_action('hfm_sidebar', 'hfm-footer-contact-two'); ?>
 			</div>
 
 		</div> <!-- Left-column ends.. -->
