@@ -912,7 +912,21 @@
       letter-spacing: 3px;
     }
     .hfm-brown-header .navbar-default .nav > li > a:hover{ color: #974b00 !important; }
-  /* Brown Header Navbar links */
+    /* Brown Header Navbar links */
+
+    /* HFM INSTAGRAM SLIDER SOW */
+    #hfm-ig-sow .ig-wrapper {
+      width: 50%;
+    }
+
+    #hfm-ig-sow .carousel-inner .item-body > .item-content {
+      width: 50%;
+      padding-left: 50px;
+    }
+
+    #hfm-ig-sow .carousel-indicators{
+      top: 500px;
+    }
 
   }
 
@@ -1001,6 +1015,14 @@
     #hfm-carousel-sow .carousel-inner .item-body > .item-content,
     #hfm-carousel-sow .carousel-inner > .item > .item-body > img{ flex: 0 0 100%; }
     /* SOW CAROUSEL */
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1200px){
+    #hfm-ig-sow .carousel-indicators {
+      top: 500px;
+      left: 55%;
+      width: auto;
+    }
   }
 
   @media (max-width: 768px) {
