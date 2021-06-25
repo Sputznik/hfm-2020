@@ -237,6 +237,21 @@
   #hfm-ig-sow .instagram-media.instagram-media-rendered{ border: 1px solid rgb(219, 219, 219) !important; }
   #hfm-ig-sow .carousel-inner .item-body > .item-content{ padding-top:30px; }
 
+
+  /* SOW HFM VIDEO POPUP BUTTON */
+  .hfm-video-btn-wrapper .hfm-video-btn{
+    font-size: 18px;
+    padding: 14px 36px;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    border-radius: 1.5em;
+    text-decoration: none;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+  }
+
+  div.hfm-video-btn{ display: inline-block; cursor: pointer; }
+
   @media(min-width:1200px){
     #hfm-ig-sow .carousel-indicators{
       left: 54%;
