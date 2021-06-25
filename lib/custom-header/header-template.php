@@ -1,19 +1,18 @@
 <?php
-  global $post;
   $bg_class = '';
   $logos = get_stylesheet_directory_uri().'/assets/images/';
   $navbar_close_btn = $logos.'arrow-right.png';
-  $is_sticky_page = get_post_meta( $post->ID, $key = 'sticky_transparent', true );
+  $is_sticky_page = get_post_meta( get_the_ID(), $key = 'sticky_transparent', true );
 
   // Change header styles for sticky and single pages
-  if( is_single() || $is_sticky_page || is_404() ){
+  if( is_singular('videos') || $is_sticky_page || is_404() ){
     $bg_class = 'hfm-brown-header';
     $navbar_close_btn = $logos.'arrow-right-sticky.png';
   }
 
 ?>
 <div class="container-fluid hfm-navbar-wrapper <?php _e( $bg_class );?>">
-  <?php if( is_single() || $is_sticky_page || is_404() ){ do_action('sp_sticky_logo'); } else{ do_action('sp_logo'); } ?>
+  <?php if( is_singular('videos') || $is_sticky_page || is_404() ){ do_action('sp_sticky_logo'); } else{ do_action('sp_logo'); } ?>
     <nav class="navbar navbar-default side-navigation">
       <!-- <div class="container-fluid"> -->
     		<div class="navbar-header">
