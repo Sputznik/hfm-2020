@@ -2,9 +2,7 @@ jQuery(document).ready(function(){
 
 	jQuery('[data-behaviour~=videos-slick]').each( function(){
 
-		var $el = jQuery( this ),
-				$thumbnail = $el.find('.video-thumbnail .before');
-				console.log($thumbnail.css('padding-top'));
+		var $el = jQuery( this );
 
 		$el.slick({
 			slidesToShow		: $el.data('items'),
