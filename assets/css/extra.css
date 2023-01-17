@@ -121,6 +121,12 @@ h5{
   color: #ffffff;
 }
 .sp-list-users .user .user-avatar{ height: 460px; }
+.sp-list-users .user-email{ color: #ffffff; }
+.sp-list-users .decoration-wrapper .decoration {
+  border-top-color: #d68910;
+  max-width: 60px;
+  padding-bottom: 5px;
+}
 
 @media(max-width:768px) {
 	.sp-list-users .user .user-avatar{ /*width: 248px;*/ height: 344px; }
@@ -150,12 +156,20 @@ h5{
  		letter-spacing: normal;
  		text-align: center;
 	}
+
+  .sp-list-users .user-email{ text-align: center; font-size: 14px; }
+  .sp-list-users .decoration-wrapper{ justify-content: center; }
+
 }
 
 @media only screen and (max-width: 1023px) and (min-width: 768px){
-	.so-widget-sp-list-users .layer2 .user-name{ text-align: left; }
-	.so-widget-sp-list-users .layer2 .user-designation{ text-align: left; }
-	.so-widget-sp-list-users .layer3 p{ text-align: left; }
+	.so-widget-sp-list-users .layer2 .user-name,
+	.so-widget-sp-list-users .layer2 .user-designation,
+  .sp-list-users .user-email{ text-align: left; }
+
+  .so-widget-sp-list-users .layer3 p{ text-align: left; }
+
+  .sp-list-users .decoration-wrapper{ justify-content: unset; }
 }
 
 .sp-list-users{ max-width: 100%; margin-left: auto; margin-right: auto; }
@@ -165,6 +179,18 @@ h5{
 	.sp-list-users .user .layer1{ opacity: 0.2 !important}
   .sp-list-users .user:hover{ z-index: 1000; overflow: visible; }
 	.sp-list-users .user:hover .layer1{ opacity: 1 !important;}
+
+  .sp-list-users .user-email,
+  .sp-list-users .decoration-wrapper{
+    transition: opacity 0.8s;
+    opacity: 0;
+  }
+
+  .sp-list-users .user:hover .user-email,
+  .sp-list-users .user:hover .decoration-wrapper{
+    opacity: 1;
+  }
+
 }
 .sp-list-users{ margin-bottom: 60px; }
 #collective-user .sp-list-users .user .user-avatar{
