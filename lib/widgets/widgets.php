@@ -3,6 +3,16 @@
 add_action( 'widgets_init', function(){
 
   register_sidebar( array(
+    'name'          => 'Ask Question',
+    'id'            => 'hfm-ask-question',
+    'description'   => 'Appears on all pages in the bottom right',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</aside>',
+    'before_title'  => '<h3 class="widget-title">',
+    'after_title'   => '</h3>',
+  ) );
+
+  register_sidebar( array(
     'name'          => 'Footer Contact Column 1',
     'id'            => 'hfm-footer-contact-one',
     'description'   => 'Appears in the footer',

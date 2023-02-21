@@ -1,5 +1,7 @@
 <?php $img_path = get_stylesheet_directory_uri().'/assets/images';?>
 
+<?php do_action('hfm_sidebar', 'hfm-ask-question'); ?>
+
 <div class="hfm-footer">
 
 	<div class="section-one">
